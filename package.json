@@ -9,10 +9,14 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "app:sync": "ionic capacitor sync",
+    "generate:android": "npm run app:sync && cd android && ./gradlew assembleDebug",
+    "app:run:android": "npx cap run android"
   },
   "private": true,
   "dependencies": {
+    "@angular-eslint/bundled-angular-compiler": "^16.0.3",
     "@angular/animations": "^16.0.0",
     "@angular/common": "^16.0.0",
     "@angular/compiler": "^16.0.0",
@@ -21,6 +25,7 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "@capacitor/android": "5.0.4",
     "@capacitor/app": "5.0.3",
     "@capacitor/core": "5.0.4",
     "@capacitor/haptics": "5.0.2",
