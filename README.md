@@ -62,7 +62,7 @@ Generate version
  ```shell
   npm run generate:android
  ```
-* Android:
+* iOS:
 
  ```shell
   npm run generate-ios
