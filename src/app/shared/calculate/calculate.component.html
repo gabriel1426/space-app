@@ -1,0 +1,30 @@
+<div class="drawer" #drawer>
+  <div class="ion-text-center">
+    <ion-button fill="clear" expand="full" (click)="toggleDrawer()">
+      <div class="drawer__pull">
+      </div>
+    </ion-button>
+  </div>
+
+  <div class="drawer__info">
+    <h4 class="drawer__title"> {{ 'knowWeight' | translate }}</h4>
+    <br>
+    <div>
+      <p> <li> {{ 'enterWeight' | translate}} </p>
+      <div class="drawer__input-container center">
+        <span class="drawer__input-kilos">KG</span>
+        <ion-input class="drawer__input" placeholder="0" type="tel" maxlength="4" [(ngModel)]="pesoActual"></ion-input>
+      </div>
+      <div class="center-1">
+        <ion-button class="drawer__button center" fill="outline" (click)="calcularPeso()">Calcular</ion-button>
+      </div>
+    </div>
+    <div *ngIf="pesoTotal" class="drawer__total center">
+      <p class="drawer__total-title"> {{ 'weightResult' | translate:{planetName: name} }}</p>
+      <p class="drawer__total-result"> {{ pesoTotal }}  KG</p>
+    </div>
+
+
+  </div>
+
+</div>

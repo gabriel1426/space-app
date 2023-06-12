@@ -1,0 +1,56 @@
+.container{
+  background: linear-gradient(180deg, #F48535 0%, #F4A435 100%);
+  border-radius: 40px;
+  height: 150px;
+  margin: 16px 30px 30px 30px;
+  position: relative;
+
+  &__image-container{
+    border-radius: 40px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  &__image {
+    position: absolute;
+    height: 190px;
+    top: -100px;
+    left: 10px;
+  }
+
+  &__title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    left: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: var(--poppins-blod);
+
+    &-icon{
+      margin-left: 8px;
+      margin-bottom: -3px;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  &__icon-container {
+    overflow-y: scroll;
+    height: 200px;
+    width: 100%;
+  }
+
+  &__icon {
+      height: 200px;
+      position: absolute;
+      top: -30px;
+      right: 0;
+  }
+}

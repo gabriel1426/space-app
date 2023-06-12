@@ -1,0 +1,288 @@
+{
+  "welcomeTitle": "Welcome",
+  "spaceWalker": "SpaceWalker!",
+  "planets": "Explora",
+  "lastExploration": "Última Exploración",
+  "curiosities": "Curiosidades",
+  "knowWeight": "¡Conoce tu peso aquí!",
+  "enterWeight": "Ingresa tu peso en la tierra",
+  "weightResult": "Su peso en {{ planetName }} es aproximadamente",
+  "Planets": [
+    {
+      "id": "0",
+      "name" : "Sol",
+      "description": "La estrella central del sistema solar, una esfera de plasma que emite luz y calor vital para la vida en la Tierra.",
+      "image": "../assets/icon/sol.svg",
+      "color": "255,183,7",
+      "gravedad" : "274",
+      "curiosidades" : [
+        {
+          "curiosity": "El Sol es una estrella de tipo G2V, que significa que es una estrella enana amarilla de secuencia principal."
+        },
+        {
+          "curiosity": "Contiene el 99.8% de la masa total del sistema solar y su energía es generada por reacciones nucleares en su núcleo."
+        },
+        {
+          "curiosity": "El Sol emite luz en todas las longitudes de onda, incluyendo luz visible, infrarroja y ultravioleta."
+        },
+        {
+          "curiosity": "Tiene una temperatura superficial de alrededor de 5,500 grados Celsius."
+        },
+        {
+          "curiosity": "El Sol tiene un ciclo de actividad solar que dura aproximadamente 11 años, marcado por aumentos y disminuciones en la cantidad de manchas solares y erupciones solares."
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name" : "Mercurio",
+      "description": "El planeta más cercano al Sol, con una superficie rocosa y sin atmósfera.",
+      "image": "../assets/icon/mercurio.svg",
+      "color": "209,123,68",
+      "gravedad" : "3.7",
+      "curiosidades" : [
+        {
+          "curiosity": "Mercurio es el planeta más pequeño y el más cercano al Sol."
+        },
+        {
+          "curiosity": "Tiene la órbita más excéntrica de todos los planetas, lo que causa cambios extremos de temperatura."
+        },
+        {
+          "curiosity": "Tiene una superficie cubierta de cráteres y acantilados escarpados."
+        },
+        {
+          "curiosity": "Su nombre proviene del dios romano Mercurio, mensajero de los dioses."
+        },
+        {
+          "curiosity": "Un año en Mercurio dura aproximadamente 88 días terrestres."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name" : "Venus",
+      "description": "Un mundo volcánico con una densa atmósfera y altas temperaturas.",
+      "image": "../assets/icon/venus.svg",
+      "color": "248,87,54",
+      "gravedad" : "8.87",
+      "curiosidades" : [
+        {
+          "curiosity": "Venus es el planeta más brillante en nuestro cielo después del Sol y la Luna."
+        },
+        {
+          "curiosity": "Posee una atmósfera densa compuesta principalmente de dióxido de carbono."
+        },
+        {
+          "curiosity": "Tiene una temperatura promedio en la superficie de alrededor de 470 grados Celsius."
+        },
+        {
+          "curiosity": "Su superficie está cubierta por volcanes y llanuras volcánicas."
+        },
+        {
+          "curiosity": "Venus gira en sentido contrario a la mayoría de los planetas, en una dirección retrógrada."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name" : "Tierra",
+      "description": "Nuestro hogar, un planeta único con agua líquida y vida.",
+      "image": "../assets/icon/tierra.svg",
+      "color": "0,157,209",
+      "gravedad" : "9.8",
+      "curiosidades" : [
+        {
+          "curiosity": "La Tierra es el único planeta conocido que alberga vida en todo el universo."
+        },
+        {
+          "curiosity": "Es el quinto planeta más grande del sistema solar."
+        },
+        {
+          "curiosity": "Su atmósfera rica en oxígeno y agua líquida en la superficie son elementos clave para el desarrollo y sostenimiento de la vida."
+        },
+        {
+          "curiosity": "Posee un satélite llamado Luna, que es el único satélite natural de la Tierra."
+        },
+        {
+          "curiosity": "La Tierra tiene una diversidad increíble de paisajes, desde montañas y océanos, desiertos y selvas."
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "name" : "Luna",
+      "description": "Nuestro satélite natural, con paisajes marcados por cráteres y mares lunares.",
+      "image": "../assets/icon/luna.svg",
+      "color": "154,171,189",
+      "gravedad" : "1.62",
+      "curiosidades" : [
+        {
+          "curiosity": "La Luna es el único satélite natural de la Tierra y el quinto satélite más grande del sistema solar."
+        },
+        {
+          "curiosity": "Tiene una superficie llena de cráteres, montañas, llanuras y valles."
+        },
+        {
+          "curiosity": "La gravedad en la Luna es aproximadamente 1/6 de la gravedad en la Tierra, lo que permite a los astronautas saltar más alto."
+        },
+        {
+          "curiosity": "La Luna está en sincronía de rotación con la Tierra, lo que significa que siempre muestra la misma cara hacia nosotros."
+        },
+        {
+          "curiosity": "Las misiones Apolo llevaron a los primeros humanos a la Luna, con la famosa frase \"Un pequeño paso para el hombre, un gran salto para la humanidad\"."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name" : "Marte",
+      "description": "El Planeta Rojo, con una fina atmósfera y posibles indicios de vida pasada.",
+      "image": "../assets/icon/marte.png",
+      "color": "232,37,17",
+      "gravedad" : "3.71",
+      "curiosidades" : [
+        {
+          "curiosity": "Marte es conocido como el \"Planeta Rojo\" debido a la apariencia rojiza de su superficie."
+        },
+        {
+          "curiosity": "Tiene el monte más alto del sistema solar, el Monte Olimpo, que es tres veces más alto que el Monte Everest."
+        },
+        {
+          "curiosity": "Ha sido objeto de exploración de numerosas misiones espaciales en busca de evidencia de vida pasada o presente."
+        },
+        {
+          "curiosity": "Marte tiene dos lunas pequeñas llamadas Fobos y Deimos."
+        },
+        {
+          "curiosity": "En Marte se encuentra el cañón más grande del sistema solar, el Valles Marineris.\n"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Júpiter",
+      "description": "El gigante gaseoso con una gran mancha roja y numerosas lunas.",
+      "image": "../assets/icon/jupiter.png",
+      "color": "235,151,68",
+      "gravedad" : "24.79",
+      "curiosidades" : [
+        {
+          "curiosity": "Júpiter es el planeta más grande del sistema solar, con un diámetro que es más de 11 veces el de la Tierra."
+        },
+        {
+          "curiosity": "Tiene una poderosa tormenta conocida como la Gran Mancha Roja, que ha estado activa durante siglos."
+        },
+        {
+          "curiosity": "Júpiter tiene al menos 79 lunas conocidas, siendo las cuatro mayores conocidas como las lunas galileanas: Ío, Europa, Ganimedes y Calisto."
+        },
+        {
+          "curiosity": "Su magnetosfera es la más grande y poderosa de todos los planetas del sistema solar."
+        },
+        {
+          "curiosity": "Júpiter emite radiación de forma continua y es un importante emisor de ondas de radio."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name" : "Saturno",
+      "description": "Con sus impresionantes anillos y una composición similar a Júpiter.",
+      "image": "../assets/icon/saturno.svg",
+      "color": "234,162,83",
+      "gravedad" : "10.44",
+      "curiosidades" : [
+        {
+          "curiosity": "Saturno es conocido por sus impresionantes anillos compuestos principalmente de partículas de hielo."
+        },
+        {
+          "curiosity": "Tiene más de 80 lunas conocidas, siendo Titán la más grande y la única luna en el sistema solar con una atmósfera densa."
+        },
+        {
+          "curiosity": "Saturno es el segundo planeta más grande del sistema solar, después de Júpiter."
+        },
+        {
+          "curiosity": "Sus anillos están compuestos por miles de anillos más pequeños que varían en tamaño y brillo."
+        },
+        {
+          "curiosity": "Saturno tiene una densidad tan baja que podría flotar en el agua si se pudiera encontrar un océano lo suficientemente grande."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name" : "Urano",
+      "description": "Un planeta gaseoso inclinado con un color azul verdoso distintivo.",
+      "image": "../assets/icon/urano.svg",
+      "color": "0,114,180",
+      "gravedad" : "8.87",
+      "curiosidades" : [
+        {
+          "curiosity": "Urano es conocido por su inclinación extrema, su eje de rotación está casi en posición horizontal."
+        },
+        {
+          "curiosity": "Es el tercer planeta más grande del sistema solar."
+        },
+        {
+          "curiosity": "Urano tiene un sistema de anillos, aunque son menos notables que los de Saturno."
+        },
+        {
+          "curiosity": "Tiene una atmósfera compuesta principalmente de hidrógeno y helio, con una capa de nubes azules debido a la presencia de metano."
+        },
+        {
+          "curiosity": "Urano tiene 27 lunas conocidas, y su luna más grande, Titania, es la octava luna más grande del sistema solar."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name" : "Neptuno",
+      "description": "El último de los gigantes gaseosos, con vientos fuertes y tormentas oscuras.",
+      "image": "../assets/icon/neptuno.svg",
+      "color": "0,126,226",
+      "gravedad" : "11.15",
+      "curiosidades" : [
+        {
+          "curiosity": "Neptuno es el planeta más distante del sistema solar."
+        },
+        {
+          "curiosity": "Tiene una atmósfera turbulenta con vientos extremadamente rápidos, alcanzando velocidades de hasta 2.400 km/h."
+        },
+        {
+          "curiosity": "Fue descubierto matemáticamente antes de ser observado directamente debido a perturbaciones gravitacionales en la órbita de Urano."
+        },
+        {
+          "curiosity": "Tiene un tono azul intenso debido a la presencia de metano en su atmósfera."
+        },
+        {
+          "curiosity": "Neptuno tiene 14 lunas conocidas, siendo Tritón la más grande y la única luna que orbita en dirección opuesta al movimiento del planeta."
+        }
+      ]
+
+    },
+    {
+      "id": "9",
+      "name" : "Plutón",
+      "description": "Un planeta enano helado en los confines del sistema solar.",
+      "image": "../assets/icon/pluton.svg",
+      "color": "97,104,114",
+      "gravedad" : "0.62",
+      "curiosidades" : [
+        {
+          "curiosity": "Plutón fue considerado el noveno planeta del sistema solar hasta que fue reclasificado como un planeta enano en 2006."
+        },
+        {
+          "curiosity": "Tiene una órbita altamente excéntrica y su inclinación orbital es diferente a la de los otros planetas del sistema solar."
+        },
+        {
+          "curiosity": "Plutón tiene cinco lunas conocidas, siendo Caronte la más grande y la que forma un sistema binario con Plutón."
+        },
+        {
+          "curiosity": "Es el objeto más grande del cinturón de Kuiper, una región más allá de Neptuno poblada por pequeños cuerpos helados."
+        },
+        {
+          "curiosity": "Plutón tiene una superficie helada compuesta principalmente de nitrógeno, metano y monóxido de carbono."
+        }
+      ]
+    }
+  ]
+}

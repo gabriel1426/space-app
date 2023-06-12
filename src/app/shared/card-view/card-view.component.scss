@@ -1,0 +1,61 @@
+
+.card {
+  background: white;
+  border-radius: 60px;
+  height: 300px;
+  margin: 30px;
+  position: relative;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  .swiper-pagination-bullet-active {
+    background: white !important;
+    height: 50px;
+  }
+
+  &__image {
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 1rem;
+    color: black;
+    font-family: var(--poppins-blod);
+  }
+
+  &__button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #F48635;
+    color: white;
+    margin: 0 0 2rem 1.5rem;
+    box-shadow: -4px 6px 20px rgba(193, 88, 11, 0.4);
+
+  }
+
+  &__number {
+    position: absolute;
+    font-size: 180px;
+    opacity: .05;
+    font-weight: 900;
+    bottom: -70px;
+    right: 5px;
+    color: #020632;
+    font-family: var(--poppins-blod);
+  }
+}
+
+swiper-pagination {
+  position: relative;
+}
+

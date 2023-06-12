@@ -1,18 +1,17 @@
-import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
-import {GestureController, NavController} from "@ionic/angular";
-import { AppRoutes } from "../../core/const/app-routes";
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { GestureController, NavController } from '@ionic/angular';
+import { AppRoutes } from '../../core/const/app-routes';
 
 @Component({
   selector: 'app-start',
   templateUrl: './start.page.html',
-  styleUrls: ['./start.page.scss'],
+  styleUrls: ['./start.page.scss']
 })
 export class StartPage implements AfterViewInit {
+  @ViewChild('drawer', { read: ElementRef }) drawer: ElementRef;
+  @ViewChild('text', { read: ElementRef }) text: ElementRef;
 
-  @ViewChild( 'drawer', { read: ElementRef}) drawer: ElementRef;
-  @ViewChild( 'text', { read: ElementRef}) text: ElementRef;
-
-  constructor(private gestureController: GestureController, private navControl: NavController) { }
+  constructor(private gestureController: GestureController, private navControl: NavController) {}
 
   async ngAfterViewInit() {
     const drawer = this.drawer.nativeElement;
@@ -20,18 +19,15 @@ export class StartPage implements AfterViewInit {
       el: drawer,
       gestureName: 'swipe',
       direction: 'x',
-      onMove: ev => {
+      onMove: () => {
         drawer.style.width = '102%';
         this.text.nativeElement.style.zIndex = -1;
       },
-      onEnd: ev => {
-        console.log('termino ya')
+      onEnd: () => {
         this.navControl.navigateRoot(`${AppRoutes.home}`);
       }
-    })
+    });
 
-    gesture.enable(true)
+    gesture.enable(true);
   }
-
-
 }

@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="container__image-container">
+    <img class="container__image" [src]="planet.image" [ngStyle]="{ 'filter': shadow()}" alt="palnet">
+  </div>
+  <div class="container__icon-container">
+    <img  class="container__icon" src="assets/icon/astronauta.svg" alt="astronauta">
+  </div>
+  <div class="container__title"> {{ planet.name }} <i class="container__title-icon space-icons icon__arrow-right"></i></div>
+</div>

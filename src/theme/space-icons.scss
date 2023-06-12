@@ -1,0 +1,47 @@
+i {
+  &[class*='space-icons'] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+  }
+}
+
+@mixin icon-common-size {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon {
+
+  &__arrow-right {
+    @include icon-common-size;
+    mask-image: url('../assets/icon/arrow-right.svg');
+  }
+
+  &__arrow-left {
+    @include icon-common-size;
+    mask-image: url('../assets/icon/arrow-left.svg');
+  }
+
+  &__chevron-down {
+    @include icon-common-size;
+    mask-image: url('../assets/icon/chevron-down.svg');
+  }
+
+  &__chevron-right {
+    @include icon-common-size;
+    mask-image: url('../assets/icon/chevron-right.svg');
+  }
+
+  &__card {
+    @include icon-common-size;
+    mask-image: url('../assets/icon/cards.png');
+  }
+
+  &__slide {
+    @include icon-common-size;
+    mask-image: url('../assets/icon/carousel.png');
+  }
+
+}

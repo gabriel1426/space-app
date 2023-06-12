@@ -30,18 +30,20 @@
     transition: 0.3s all ease;
     justify-content: flex-end;
     padding-right: 8px;
+    position: absolute;
+    z-index: 2;
   }
 
   &__slide-text {
     color: #000000;
     font-weight: bold;
     font-size: 16px;
-    left: 48%;
-    margin-top: -35px;
+    top: 12px;
+    right: 20px;
     position: absolute;
 
      p {
-       margin: 0px;
+       margin: 0;
      }
   }
 }

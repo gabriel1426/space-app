@@ -1,5 +1,28 @@
-<ion-content [fullscreen]="true">
-  <div class="start center">
+<ion-content [fullscreen]="false" scroll-y="false">
+  <div class="home">
+    <p class="home__title"> {{ 'spaceWalker' | translate}} </p>
 
+    <div class="home__subtitle">
+      <p> {{ 'lastExploration' | translate }}</p>
+    </div>
+
+    <app-last-view class="home__container-last" [planet]="lastPlanet()" (click)="goLast()"></app-last-view>
+
+    <div class="home__subtitle">
+      {{ 'planets' | translate}}
+      <div class="home__tabs">
+        <div class="home__tabs-1 center" (click)="cardView()">
+          <i class="home__subtitle-icon space-icons icon__card" [ngClass]="{'home__tabs-activated': swiperView()}"></i>
+        </div>
+        <div class="home__tabs-1 center" (click)="slideView()">
+          <i class="home__subtitle-icon space-icons icon__slide" [ngClass]="{'home__tabs-activated': !swiperView()}"></i>
+        </div>
+      </div>
+    </div>
+
+    <app-card-view @faceAnimation *ngIf="swiperView()" [planets]="planets" (selected)="planetSelected($event)"  class="home__container center"></app-card-view>
+    <app-swiper-view @faceAnimation *ngIf="!swiperView()" [planets]="planets" (selected)="planetSelected($event)" class="home__container"></app-swiper-view>
+    <br>
+    <br>
   </div>
 </ion-content>

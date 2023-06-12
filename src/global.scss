@@ -25,6 +25,26 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+@import "./theme/space-icons";
+@import "./theme/space-spaces";
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-blod";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+* {
+  font-family: var(--poppins);
+}
 
 .center {
   justify-content: center;

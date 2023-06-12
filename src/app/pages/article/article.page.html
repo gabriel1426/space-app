@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="false" scroll-y="false">
+  <div class="header">
+    <i class="space-icons icon__arrow-left" (click)="goBack()"></i>
+  </div>
+  <div class="article">
+    <p class="article__number"> {{ planet.id }} </p>
+    <div class="article__container">
+      <div class="article__image" [ngStyle]="returnShadow()" >
+        <img [src]="planet.image" alt="">
+      </div>
+      <p class="article__name margin-top--32"> {{ planet.name }}</p>
+      <p class="article__description margin-top--8" > {{planet.description }}</p>
+      <p class="article__curiosity-title"> Curiosidades </p>
+      <p class="article__curiosity" *ngFor="let curiosidad of planet.curiosidades"> <li>{{ curiosidad.curiosity }}</p>
+      <div style="height: 200px"></div>
+    </div>
+  </div>
+  <div>
+    <app-calculate [gravedad]="planet.gravedad" [name]="planet.name"></app-calculate>
+  </div>
+</ion-content>

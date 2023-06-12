@@ -1,0 +1,16 @@
+<swiper-container slides-per-view="2.1" centered-slides="true" space-between="20" lazy="true" events-prefix="swiper-" >
+  <swiper-slide *ngFor="let planet of planets">
+    <div  class="swiper__card center" (click)="planetSelected(planet)">
+      <img [src]="planet.image" alt="tierra" class="swiper__card-img" [ngStyle]="returnShadow(planet)"  loading="lazy">
+      <div class="swiper__card-text">
+        <h3> {{ planet.name }}</h3>
+        <p> {{ planet.description }}</p>
+        <span class="swiper__card-text-number"> {{ planet.id }} </span>
+      </div>
+      <div class="swiper__card-bottom center">
+        <div class="swiper__card-bottom2">
+        </div>
+      </div>
+    </div>
+  </swiper-slide>
+</swiper-container>

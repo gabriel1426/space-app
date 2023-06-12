@@ -1,0 +1,67 @@
+ion-content {
+  --background: white;
+}
+
+.header{
+  padding: 2rem;
+  display: flex;
+  color: black;
+}
+
+.article {
+  padding: 0 2rem 0;
+  color: black;
+
+  &__container{
+    overflow: auto;
+    height: 90vh;
+    z-index: 10;
+    width: 100%;
+  }
+
+   &__image {
+     text-align: center;
+     margin: 0;
+
+     img {
+       width: 250px;
+       height: 250px;
+     }
+   }
+
+  &__name {
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: var(--poppins-blod);
+    color: black;
+    margin: 0;
+  }
+
+  &__description {
+    margin: 0;
+    color: #6C6C6C;
+    font-size: 1rem;
+  }
+
+  &__curiosity {
+    color: #6C6C6C;
+    font-size: 1rem;
+  }
+
+  &__curiosity-title {
+    font-weight: bold;
+  }
+
+  &__number {
+    position: absolute;
+    font-size: 250px;
+    opacity: 0.05;
+    font-weight: 900;
+    margin-top: 200px;
+    right: 20px;
+    top: 0;
+    color: #020632;
+    font-family: var(--poppins-blod);
+    pointer-events: none;
+  }
+}
