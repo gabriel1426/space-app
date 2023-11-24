@@ -2,7 +2,7 @@
   <div class="header">
     <i class="space-icons icon__arrow-left" (click)="goBack()"></i>
   </div>
-  <div class="article">
+  <div class="article" *ngIf="planet">
     <p class="article__number"> {{ planet.id }} </p>
     <div class="article__container">
       <div class="article__image" [ngStyle]="returnShadow()" >

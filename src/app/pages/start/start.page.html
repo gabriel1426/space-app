@@ -1,12 +1,12 @@
 <ion-content >
   <div class="start center">
-      <p class="start__text"> Explore <br> The Universe</p>
+      <p class="start__text" [innerHTML]="'exploreTheUniverse' | translate"> </p>
       <div class="start__slide">
         <div class="start__arrows center" #drawer>
           <img src="assets/icon/arrows.group.svg" alt="arrows">
         </div>
         <div class="start__slide-text center" #text>
-          <p> Get Started </p>
+          <p>{{ 'started' | translate }} </p>
         </div>
       </div>
   </div>

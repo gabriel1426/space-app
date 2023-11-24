@@ -29,21 +29,14 @@
 @import "./theme/space-spaces";
 
 @font-face {
-  font-family: "Poppins";
+  font-family: "fredoka";
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Poppins-blod";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./assets/fonts/Poppins-Bold.ttf");
+  src: url("./assets/fonts/Fredoka-Medium.ttf");
 }
 
 * {
-  font-family: var(--poppins);
+  font-family: var(--fredoka);
 }
 
 .center {

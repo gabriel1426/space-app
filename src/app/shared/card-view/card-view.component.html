@@ -1,7 +1,7 @@
 <swiper-container lazy="true" events-prefix="swiper-" pagination="true">
   <swiper-slide *ngFor="let planet of planets">
     <div class="card center" (click)="planetSelected(planet)">
-      <img [src]="planet.image" alt="tierra" class="card__image"  [ngStyle]="returnShadow(planet)"  loading="lazy">
+      <ion-img [src]="planet.image" alt="tierra" class="card__image"  [ngStyle]="returnShadow(planet)"  preload="visible"></ion-img>
       <h3 class="card__title">{{ planet.name }}</h3>
       <span  class="card__button center">
         <i class="space-icons icon__arrow-right"></i>

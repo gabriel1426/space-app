@@ -1,11 +1,12 @@
 import { Component, ChangeDetectorRef, WritableSignal } from '@angular/core';
 import { IPlanet } from './model/planets.interface';
 import { TranslateService } from '@ngx-translate/core';
-import { LoadingController, NavController } from '@ionic/angular';
+import { LoadingController, NavController, Platform } from '@ionic/angular';
 import { signal } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
 import { AppRoutes } from '../../core/const/app-routes';
 import { NavigationOptions } from '@ionic/angular/providers/nav-controller';
+import { StatusBar, Style } from '@capacitor/status-bar';
 
 @Component({
   selector: 'app-home',
@@ -24,11 +25,19 @@ export class HomePage {
     private loadingCtrl: LoadingController,
     private translateService: TranslateService,
     private navControl: NavController,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private platform: Platform
   ) {
     this.planets = this.translateService.instant('Planets');
     this.planets[0].isActivated = true;
     this.lastPlanet = signal(this.planets[0]);
+  }
+
+  async ionViewDidEnter() {
+    if (this.platform.is('capacitor')) {
+      await StatusBar.setBackgroundColor({ color: '#0D6FCA' });
+      await StatusBar.setStyle({ style: Style.Dark });
+    }
   }
 
   cardView() {

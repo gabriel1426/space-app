@@ -13,6 +13,7 @@ import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-transla
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { enterAnimation } from './core/animations/nav-animation';
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
@@ -31,7 +32,9 @@ function appInitializerFactory(translate: TranslateService) {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    IonicModule.forRoot(),
+    IonicModule.forRoot({
+      navAnimation: enterAnimation
+    }),
     CommonModule,
     AppRoutingModule,
     HttpClientModule,

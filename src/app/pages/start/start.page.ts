@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { GestureController, NavController } from '@ionic/angular';
+import { GestureController, NavController, Platform } from '@ionic/angular';
 import { AppRoutes } from '../../core/const/app-routes';
+import { SplashScreen } from '@capacitor/splash-screen';
+import { StatusBar, Style } from '@capacitor/status-bar';
 
 @Component({
   selector: 'app-start',
@@ -11,7 +13,19 @@ export class StartPage implements AfterViewInit {
   @ViewChild('drawer', { read: ElementRef }) drawer: ElementRef;
   @ViewChild('text', { read: ElementRef }) text: ElementRef;
 
-  constructor(private gestureController: GestureController, private navControl: NavController) {}
+  constructor(
+    private gestureController: GestureController,
+    private navControl: NavController,
+    private platform: Platform
+  ) {}
+
+  async ionViewDidEnter() {
+    if (this.platform.is('capacitor')) {
+      await StatusBar.setBackgroundColor({ color: '#0D6FCA' });
+      await StatusBar.setStyle({ style: Style.Dark });
+      await SplashScreen.hide();
+    }
+  }
 
   async ngAfterViewInit() {
     const drawer = this.drawer.nativeElement;

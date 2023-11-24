@@ -32,7 +32,6 @@ export class CalculateComponent implements AfterViewInit {
   async ngAfterViewInit() {
     const drawer = this.drawer.nativeElement;
     this.openHeight = (this.platform.height() / 100) * 50;
-    console.log(this.openHeight);
     const gesture = await this.gestureCtrl.create({
       el: drawer,
       gestureName: 'swipe',

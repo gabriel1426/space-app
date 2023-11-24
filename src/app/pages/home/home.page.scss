@@ -1,6 +1,6 @@
 
 .home {
-  background-image: url("../../../assets/img/secundary-background-2.png");
+  background-image: url("../../../assets/img/secundary-background.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -9,10 +9,10 @@
   flex-direction: column;
 
   &__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    color: white;;
+    color: white;
   }
 
   &__container-last {

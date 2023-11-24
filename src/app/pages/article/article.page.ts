@@ -1,23 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { IPlanet } from '../home/model/planets.interface';
-import { NavController } from '@ionic/angular';
+import { NavController, Platform } from '@ionic/angular';
+import { StatusBar, Style } from '@capacitor/status-bar';
 
 @Component({
   selector: 'app-article',
   templateUrl: './article.page.html',
   styleUrls: ['./article.page.scss']
 })
-export class ArticlePage implements OnInit {
+export class ArticlePage {
   public planet: IPlanet;
 
-  constructor(private readonly route: ActivatedRoute, private navControl: NavController) {
+  constructor(private readonly route: ActivatedRoute, private router: Router, private platform: Platform) {
     this.route?.queryParams.subscribe((params) => {
       this.planet = params['planet'];
     });
   }
 
-  ngOnInit(): void {}
+  async ionViewDidEnter() {
+    if (this.platform.is('capacitor')) {
+      await StatusBar.setBackgroundColor({ color: '#FFFFFF' });
+      await StatusBar.setStyle({ style: Style.Light });
+    }
+  }
 
   returnShadow() {
     return {
@@ -26,6 +32,6 @@ export class ArticlePage implements OnInit {
   }
 
   goBack() {
-    this.navControl.pop();
+    this.router.navigate(['home'], { replaceUrl: true });
   }
 }

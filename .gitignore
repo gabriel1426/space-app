@@ -33,6 +33,8 @@ log.txt
 /node_modules
 npm-debug.log
 yarn-error.log
+/android
+/ios
 
 # IDEs and editors
 .idea/

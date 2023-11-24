@@ -3,7 +3,7 @@ ion-content {
 }
 
 .header{
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
   display: flex;
   color: black;
 }
@@ -32,7 +32,6 @@ ion-content {
   &__name {
     font-weight: bold;
     font-size: 3rem;
-    font-family: var(--poppins-blod);
     color: black;
     margin: 0;
   }
@@ -61,7 +60,6 @@ ion-content {
     right: 20px;
     top: 0;
     color: #020632;
-    font-family: var(--poppins-blod);
     pointer-events: none;
   }
 }
